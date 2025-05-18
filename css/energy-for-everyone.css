@@ -51,16 +51,16 @@ body {
 
 .content {
   flex: 1 1 500px;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .content h2 {
   color: #00796b;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .content ul {
-  padding-left: 50px;
+  padding-left: 40px;
   list-style-type: disc;
 }
 
