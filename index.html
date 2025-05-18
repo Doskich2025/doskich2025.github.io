@@ -1,80 +1,182 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт у розробці</title>
-    <style>
-        body {
-            background-color: #000000;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
-            flex-direction: column;
-        }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.2em;
-            color: #cccccc;
-            margin: 5px 0;
-        }
-        .logo {
-            max-width: 225px;
-            margin-bottom: 30px;
-        }
-        .contact {
-            color: #ffffff;
-            font-size: 1.1em;
-            margin-top: 10px;
-        }
-        .contact a {
-            color: #ffffff;
-            text-decoration: none;
-        }
-        .contact a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            position: absolute;
-            bottom: 20px;
-            font-size: 0.9em;
-            color: #aaa;
-        }
-        .social-links a {
-            margin: 0 10px;
-            color: #aaa;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        .social-links a:hover {
-            color: #ffffff;
-        }
-    </style>
-</head>
-<body>
-    <img src="images/logo-stam.png" alt="Логотип СТАМ" class="logo">
-    <h1>Сайт у розробці</h1>
-    <p>Скоро ми запустимося. Дякуємо за ваше терпіння!</p>
-
-    <div class="contact">
-        <p>📞 +38 (096) 640 09 72</p>
-        <p>📞 +38 (073) 640 09 72</p>
-        <p>📧 <a href="mailto:stamcommercialcompany@gmail.com">stamcommercialcompany@gmail.com</a></p>
-    </div>
-
-    <footer>
-        <div class="social-links">
-            <a href="https://www.facebook.com/share/18fLXQyThx/" target="_blank">Facebook</a> |
-            <a href="https://www.instagram.com/stam_commercial_company?igsh=MXByemV6bjlqcmJtYQ==" target="_blank">Instagram</a>
-        </div>
-    </footer>
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>STAM Commercial Company</title>
+      <link rel="stylesheet" href="reset.css">
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="styles-phone.css" >
+   </head>
+   <body>
+      <div class="bg">
+         <header class="header">
+            <div class="hamburger-menu">
+               <input id="menu__toggle" type="checkbox" />
+               <label class="menu__btn" for="menu__toggle">
+               <span></span>
+               </label>
+               <ul class="menu__box">
+                  <li><a class="menu__item" href="http://127.0.0.1:5500/energy-for-everyone.html">Про нас</a></li>
+                  <li><a class="menu__item" href="http://127.0.0.1:5500/poslygu.html">Послуги</a></li>
+                  <li><a class="menu__item" href="http://127.0.0.1:5500/object.html">Об'єкти</a></li>
+                  <li><a class="menu__item" href="https://socprofile.com/stam_commercial_company?fbclid=PAZXh0bgNhZW0CMTEAAacnx__R7kEG6NRIcA4ocKRblQgXzE28rkgyI7RWPu4m2ahxGC1AIx3zcZK6kQ_aem_K32Etg3IdwipFqZduZBaIQ">Контакти</a></li>
+               </ul>
+            </div>
+            <div class="container ">
+               <div class="header-inner">
+                  <div class="contact-info">
+                     <img src="icons/phone.png" alt="Телефон" class="icon">
+                     <a href="tel:+380(73) 067 66 57">+380(73) 067 66 57</a>
+                  </div>
+                  <div class="social-icons">
+                     <a href="https://www.instagram.com/stam_commercial_company?igsh=YzljYTk1ODg3Zg%3D%3D"><img src="icons/instagram.png" alt="Instagram" class="icon"></a>
+                     <a href="https://www.facebook.com/profile.php?id=61564926087406"><img src="icons/facebook.png" alt="Facebook" class="icon"></a>
+                     <a href="https://t.me/stam_commercial_company"><img src="icons/telegram.png" alt="Telegram" class="icon"></a>
+                     <a href="about:blank"><img src="icons/email.png" alt="Email" class="icon"></a>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <div class="intro">
+            <div class="container ">
+               <div class="intro-inner">
+                  <div class="intro__nav">
+                     <img src="photo/logo.png" alt="STAM Logo" class="logo">
+                     <nav class="nav">
+                        <a href="http://127.0.0.1:5500/energy-for-everyone.html">Про нас</a>
+                        <a href="http://127.0.0.1:5500/poslygu.html">Послуги</a>
+                        <a href="http://127.0.0.1:5500/object.html">Об'єкти</a>
+                        <a href="https://socprofile.com/stam_commercial_company?fbclid=PAZXh0bgNhZW0CMTEAAacnx__R7kEG6NRIcA4ocKRblQgXzE28rkgyI7RWPu4m2ahxGC1AIx3zcZK6kQ_aem_K32Etg3IdwipFqZduZBaIQ">Контакти</a>
+                     </nav>
+                  </div>
+                  <div class="main-content">
+                     <h1>"STAM Commercial Company: Енергія сонця для вашого бізнесу."</h1>
+                     <p class="title-about">STAM Commercial Company спеціалізується на будівництві сонячних електростанцій, ліній електропередач 10/0,4 кВ та трансформаторних підстанцій 10/0,4 кВ, надаючи послуги з проєктування, монтажу та сервісного обслуговування по всій Україні.</p>
+                     <a href="http://127.0.0.1:5500/contact-form.html" class="button">Замовити консультацію</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="services-section">
+            <div class="services-text">
+               <h2>Ваш надійний партнер у сфері відновлюваної енергетики — STAM Commercial Company</h2>
+               <p>STAM Commercial Company — інноваційна компанія, що спеціалізується на впровадженні сучасних рішень у галузі відновлюваної енергетики та систем резервного живлення.</p>
+               <h3>Наші послуги:</h3>
+               <ul>
+                  <li>Проєктування та будівництво сонячних електростанцій "під ключ"</li>
+                  <li>Впровадження систем резервного живлення</li>
+                  <li>Підключення до "зеленого тарифу"</li>
+               </ul>
+               <p>Наша команда складається з висококваліфікованих інженерів та менеджерів, які мають багаторічний досвід у сфері відновлюваної енергетики. Ми прагнемо надавати індивідуальні рішення, що відповідають потребам кожного клієнта, сприяючи зниженню енергетичних витрат та підвищенню енергоефективності.</p>
+            </div>
+            <div class="services-img">
+               <img src="photo/solar-panels.jpg" alt="Сонячні панелі">
+            </div>
+         </div>
+      </div>
+      <div class="full-width-bg">
+         <div class="container">
+            <section class="why-choose-us">
+               <h2>Чому обирають STAM Commercial Company?</h2>
+               <p>
+                  STAM Commercial Company — лідер на ринку енергетики з 2001 року, що має багаторічний досвід та бездоганну репутацію.
+                  Ми надаємо повний спектр послуг: проєктування, будівництво, запуск і обслуговування сучасних сонячних електростанцій.
+                  Завдяки власній технічній базі, інноваційним рішенням та професійній команді, STAM гарантує високу якість, ефективність і надійність кожного реалізованого проєкту.
+               </p>
+               <div class="features-grid">
+                  <div class="feature">
+                     <h3>Надійність, перевірена часом</h3>
+                     <p>
+                        STAM — це понад 25 років досвіду у сфері енергетики та 15 років практики у впровадженні сонячних електростанцій.
+                        Ми не просто будуємо — ми створюємо енергетичну незалежність для бізнесу та приватних клієнтів.
+                     </p>
+                  </div>
+                  <div class="feature">
+                     <h3>Комплексні рішення “під ключ”</h3>
+                     <p>
+                        Весь процес — від розробки проєкту до запуску та сервісного обслуговування — ми беремо на себе. Клієнту не потрібно шукати десятки підрядників, бо STAM — це рішення вже в одній команді.
+                     </p>
+                  </div>
+                  <div class="feature">
+                     <h3>Індивідуальний підхід до кожного проєкту</h3>
+                     <p>
+                        Кожен об’єкт унікальний, як і його потреби. Ми детально аналізуємо параметри, розташування, споживання і бюджет, щоб запропонувати оптимальне рішення.
+                     </p>
+                  </div>
+                  <div class="feature">
+                     <h3>Тільки перевірене обладнання</h3>
+                     <p>
+                        Ми напряму співпрацюємо з топовими світовими виробниками обладнання. Це означає — жодних посередників, краща ціна, офіційна гарантія та стабільна робота систем.
+                     </p>
+                  </div>
+                  <div class="feature">
+                     <h3>Сильна команда професіоналів</h3>
+                     <p>
+                        200+ спеціалістів: інженери, монтажники, сервісні техніки, проєктувальники. Це дозволяє нам реалізовувати навіть найскладніші й масштабні проєкти без затримок.
+                     </p>
+                  </div>
+                  <div class="feature">
+                     <h3>Підтверджені результати</h3>
+                     <p>
+                        STAM успішно реалізувала десятки мегават потужності по всій Україні — від приватних дахових СЕС до промислових станцій потужністю 5+ МВт.
+                     </p>
+                  </div>
+            </section>
+            </div>
+         </div>
+      </div>
+      <div class="stam-benefits-section "id="link_about">
+         
+         <div class="container stam-benefits-container">
+            <div class="stam-image">
+               <img src="photo/left-foto.jpg" alt="STAM handshake">
+            </div>
+            <div class="stam-text">
+               <h2 style="padding-bottom: 8px;">Переваги STAM</h2>
+               <h2 style="padding-bottom: 12px;">Обирай якість. Обирай STAM.</h2>
+               <ul>
+                  <li>Індивідуальні рішення для кожного проєкту</li>
+                  <li>25 років впевненості та розвитку на енергоринку</li>
+                  <li>Прямий імпорт обладнання з Європи та Азії</li>
+                  <li>Гарантія строків і якості виконання робіт</li>
+                  <li>200+ профі в команді інженерів та монтажників</li>
+                  <li>15 років досвіду у реалізації сонячних станцій<br/> будь-якого масштабу</li>
+               </ul>
+               <a href="http://127.0.0.1:5500/energy-for-everyone.html" class="stam-btn">Детальніше</a>
+            </div>
+         </div>
+      </div>
+      <footer class="footer">
+         <div class="container footer-inner">
+            <div class="footer-left">
+               <img src="photo/logo2.svg" alt="STAM logo" class="footer-logo">
+               <p class="footer-slogan">
+                  Інновації. Якість. Надійність.<br>
+                  Ваш шлях до енергонезалежності починається з нами!
+               </p>
+               <div class="footer-social-icons">
+                  <a href="https://www.instagram.com/stam_commercial_company?igsh=YzljYTk1ODg3Zg%3D%3D"><img src="icons/instagram.png" alt="Instagram"></a>
+                  <a href="https://www.facebook.com/profile.php?id=61564926087406"><img src="icons/facebook.png" alt="Facebook"></a>
+                  <a href="https://t.me/stam_commercial_company"><img src="icons/telegram.png" alt="Telegram"></a>
+                  <a href="about:blank"><img src="icons/email.png" alt="Email"></a>
+               </div>
+            </div>
+            <div class="footer-middle">
+               <a href="http://127.0.0.1:5500/energy-for-everyone.html">Про компанію</a>
+               <a href="http://127.0.0.1:5500/poslygu.html">Послуги</a>
+               <a href="http://127.0.0.1:5500/object.html">Об'єкти</a>
+               <a href="https://socprofile.com/stam_commercial_company?fbclid=PAZXh0bgNhZW0CMTEAAacnx__R7kEG6NRIcA4ocKRblQgXzE28rkgyI7RWPu4m2ahxGC1AIx3zcZK6kQ_aem_K32Etg3IdwipFqZduZBaIQ">Контакти</a>
+            </div>
+            <div class="footer-right">
+               <strong>Контакти</strong><br>
+               +380(73) 067 66 57<br>
+               <em>E-mail:</em><br>
+               stamcommercialcompany@gmail.com
+            </div>
+         </div>
+      </footer>
+   </body>
 </html>
