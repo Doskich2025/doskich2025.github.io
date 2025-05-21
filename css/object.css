@@ -1,3 +1,41 @@
+.top-buttons {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.top-left-button {
+  background-color: #bcd9fe;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-left: 15px;
+}
+
+.top-right-button {
+  background-color: #bcd9fe;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-right: 15px;
+}
+
+.top-left-button:hover,
+.top-right-button:hover {
+  background-color: #dce7f5;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -20,6 +58,7 @@ body {
 .solar-section h1 {
   font-size: 28px;
   margin-bottom: 10px;
+  margin-top: 60px;
 }
 
 .solar-section p {
@@ -62,6 +101,70 @@ body {
   line-height: 1.5;
 }
 
+.footer {
+  background-color: #dce7f5;
+  padding: 20px 0;
+  color: #1a1a1a;
+  font-size: 16px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 0 1 180;
+  min-width: 200px;
+}
+
+.footer-right {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.footer-slogan {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.footer-social-icons img {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+  transition: opacity 0.3s;
+}
+
+.footer-social-icons img:hover {
+  opacity: 0.7;
+}
+
+.footer-middle a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.footer-middle a:hover {
+  text-decoration: underline;
+}
+
+.footer-right em {
+  font-style: italic;
+}
+
 @media (max-width: 600px) {
   .solar-section h1 {
     font-size: 20px;
@@ -81,6 +184,17 @@ body {
 
   .card p {
     font-size: 13px;
+  }
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    margin-bottom: 20px;
   }
 }
 
